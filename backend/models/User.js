@@ -7,6 +7,6 @@ const UserSchema = mongoose.Schema({
     role: { type: String, enum: ['Candidate', 'Coordinator', 'Employer', 'Recruiter'] }
 }, { timestamps: true });
 
-mongoose.model('User', UserSchema);
+module.exports = mongoose.model('User', UserSchema);
 
 // This file defines the user schema 
